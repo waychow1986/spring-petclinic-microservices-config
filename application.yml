@@ -24,6 +24,9 @@ spring:
       allow-override: true
       # Override configuration with any local property source
       override-none: true
+      # auto-refresh config properties
+      auto-refresh: true
+      refresh-interval: 60
   jpa:
     open-in-view: false
     hibernate:
