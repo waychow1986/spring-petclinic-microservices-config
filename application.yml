@@ -99,3 +99,6 @@ azure:
   keyvault:
     enabled: true
     uri: ${AZURE_KEY_VAULT_URI}
+    
+echo:
+  greeting: Welcome
