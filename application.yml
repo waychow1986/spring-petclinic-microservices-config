@@ -1,10 +1,14 @@
+# CUSTOM PROPERTIES
+echo:
+  greeting: Welcome
+
 # COMMON APPLICATION PROPERTIES
 
 server:
   # start services on random port by default
   port: 0
   # The stop processing uses a timeout which provides a grace period during which existing requests will be allowed to complete but no new requests will be permitted
-  shutdown: graceful
+  shutdown: gracefulFFFFFF
 
 # embedded database init, supports mysql too trough the 'mysql' spring profile
 spring:
@@ -98,7 +102,4 @@ MYSQL_SERVER_ADMIN_PASSWORD: ${MYSQL-SERVER-ADMIN-PASSWORD}
 azure:
   keyvault:
     enabled: true
-    uri: ${AZURE_KEY_VAULT_URI}
-    
-echo:
-  greeting: Welcome
+    uri: ${AZURE_KEY_VAULT_URI}    
